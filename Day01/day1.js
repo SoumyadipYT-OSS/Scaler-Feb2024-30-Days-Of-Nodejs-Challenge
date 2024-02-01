@@ -3,10 +3,10 @@ const fs = require('fs');
 function readFileContent(filePath) {
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
-      console.error('Error reading file:', err);
+      console.error('\nError reading file:', err);
       return;
     }
-    console.log('File Content:');
+    console.log('\nFile Content:');
     if (data.length === 0) {
       console.log('(empty string)');
     } else {
