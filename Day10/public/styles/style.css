@@ -1,0 +1,16 @@
+* {
+    margin: auto;
+    width: fit-content;
+}
+
+h1 {
+    color: rgb(244, 134, 0);
+    color-interpolation-filters: linearRGB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color-interpolation-filters: linearRGB;
+    color: royalblue;
+}
