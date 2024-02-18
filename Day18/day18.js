@@ -45,6 +45,6 @@ async function addUser(user) {
     }
 }
 addUser({
-    username: "Dishant Yadav",
-    email: "dishant-test@gmail.com",
+    username: "Soumyadip Majumder",
+    email: "soumyadip-test@gmail.com",
 });
