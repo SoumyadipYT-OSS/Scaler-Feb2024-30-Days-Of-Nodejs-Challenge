@@ -34,7 +34,7 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 async function addUser(user) {
     const newUser = new User({
         username: user.username,
-        email: user.email
+        email: user.email,
     });
 
     try {
