@@ -1,6 +1,12 @@
 /**
  * Creates an index on the "name" field of the "Product" collection in MongoDB
  */
+const express = require('express');
+const mongoose = require('mongoose');
+
+const app = express();
+
+app.use(express.json()); // for parsing application/json
 function createProductNameIndex() {
     // Get access to your Mongoose Product model
     const Product = require('./path/to/your/product.model'); // Replace with your model path
