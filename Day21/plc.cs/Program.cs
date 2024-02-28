@@ -1,20 +1,25 @@
 ﻿using System;
 
-namespace test {
-    public class Program {
-        static void Main(string[] args) {
-            // Given Unix timestamp
-            int unixTimestamp = 1709154000;
-
-            // Convert to DateTime
-            DateTime dateTime = new DateTime(1970, 1, 1).AddSeconds(unixTimestamp);
+namespace MyDateFormatNuGetPackage
+{
+    public static class UnixTimestampConverter {
+        public static string ConvertUnixTimestampToFormattedTime(int unixTimestamp) {
+            // Convert Unix timestamp to DateTimeOffset
+            DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(unixTimestamp);
 
             // Format the time in 12-hour format with AM/PM
-            string formattedTime = dateTime.ToString("hh:mm tt");
+            string formattedTime = dateTimeOffset.ToString("hh:mm tt");
 
-            // Print the formatted time
-            Console.WriteLine($"Formatted Time: {formattedTime}");
+            return formattedTime;
+        }
 
+
+        // main method
+        static void Main(string[] args) {
+            // Test the method
+            int unixTimestamp = 1645363200;
+            string formattedTime = ConvertUnixTimestampToFormattedTime(unixTimestamp);
+            Console.WriteLine(formattedTime);
         }
     }
 }
