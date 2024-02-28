@@ -13,7 +13,6 @@ namespace MyDateFormatNuGetPackage
             return formattedTime;
         }
 
-
         // main method
         static void Main(string[] args) {
             // Test the method

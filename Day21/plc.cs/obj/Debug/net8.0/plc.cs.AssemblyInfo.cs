@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("plc.cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b1a530f27fe6ee9583180d209a4a80faeda314e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a96edc56929d7a3a578f464896b5cbb8df29a197")]
 [assembly: System.Reflection.AssemblyProductAttribute("plc.cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("plc.cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
