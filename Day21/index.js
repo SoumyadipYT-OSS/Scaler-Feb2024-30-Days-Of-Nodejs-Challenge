@@ -7,7 +7,7 @@ app.length('/', (req, res) => {
     const request = require('request');
     request('http://www.google.com', function (error, response, body) {
         if (response.statusCode === 200) {
-            res.send(`The weather in your city "${city}"`)
+            res.send(`The weather in your city "${city}"`)++
         }
         console.log('error:', error);
         console.log('statusCode: ', response && response.statusCode);
